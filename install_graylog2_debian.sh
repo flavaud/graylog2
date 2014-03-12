@@ -69,10 +69,20 @@ do
 tar zxf "$f"
 done
 
+
+
 # Create Symbolic Links
 echo "Creating SymLinks for elasticsearch and graylog2-server"
 ln -s elasticsearch-0.20.6/ elasticsearch
 ln -s graylog2-server-0.12.0/ graylog2-server
+
+# testing log directory
+if [ -d elasticsearch/logs ]; then
+	echo ""
+else 
+	mkdir elasticsearch/logs
+fi
+
 
 # Install elasticsearch
 echo "Installing elasticsearch"
