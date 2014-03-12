@@ -58,7 +58,7 @@ git clone https://github.com/elasticsearch/elasticsearch-servicewrapper.git
 
 # Download Elasticsearch, Graylog2-Server and Graylog2-Web-Interface
 echo "Downloading Elastic Search, Graylog2-Server and Graylog2-Web-Interface to /opt"
-wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.20.6.tar.gz
+wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.0.1.tar.gz
 wget https://github.com/Graylog2/graylog2-server/releases/download/0.12.0/graylog2-server-0.12.0.tar.gz
 wget https://github.com/Graylog2/graylog2-web-interface/releases/download/0.12.0/graylog2-web-interface-0.12.0.tar.gz
 
@@ -73,7 +73,7 @@ done
 
 # Create Symbolic Links
 echo "Creating SymLinks for elasticsearch and graylog2-server"
-ln -s elasticsearch-0.20.6/ elasticsearch
+ln -s elasticsearch-1.0.1/ elasticsearch
 ln -s graylog2-server-0.12.0/ graylog2-server
 
 # testing log directory
